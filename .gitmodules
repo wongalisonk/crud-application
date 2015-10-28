@@ -1,0 +1,3 @@
+[submodule "raty-fa"]
+	path = raty-fa
+	url = https://github.com/Jacob87/raty-fa.git

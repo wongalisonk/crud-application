@@ -1,0 +1,109 @@
+<!--https://github.com/wongalisonk/crud-application-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<meta name="viewport" content="width=device-width, intial scale=1">
+
+		<!-- jQuery, Bootstrap, Parse -->
+	    <script src="https://code.jquery.com/jquery.min.js"></script>
+	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	    <script src="//www.parsecdn.com/js/parse-1.6.0.min.js"></script>
+
+	    <!-- Custom files -->
+	    <script type="text/javascript" src="js/review.js"></script>
+	    <link rel="stylesheet" href="css/main.css"/>
+	    <script src = "../raty-fa/lib/jquery.raty-fa.js"></script>
+
+	    <title>BIC Cristal For Her Ball Pen Product Review</title>
+
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>BIC Cristal For Her Ball Pen</h1>
+
+			<div>
+				<h3 id="avg">Average Rating: </h3>
+			</div>
+
+			<img id="product" src="img/product.jpg"/>
+		</div>
+
+		<!--Table for product information-->
+		<div id="description" class="container table-responsive">
+			<h3>Product Information</h3>
+  			<table class="table table-condensed">
+    			<tbody>
+    				<tr>
+    					<td>Brand Name</td>
+    					<td>BIC</td>
+    				</tr>
+    				<tr>
+    					<td>Item Weight</td>
+    					<td>2.4 ounces</td>
+    				</tr>
+    		    	<tr>
+    					<td>Product Dimensions</td>
+    					<td>4.1 x 1.3 x 7.5 inches</td>
+    				</tr>
+      				<tr>
+    					<td>Item Model Number</td>
+    					<td>MSLP16-Blk</td>
+    				</tr>
+        			<tr>
+    					<td>Color</td>
+    					<td>Black</td>
+    				</tr>		
+    				<tr>
+    					<td>Number of Items</td>
+    					<td>1</td>
+    				</tr>
+     				<tr>
+    					<td>Point Type</td>
+    					<td>Medium</td>
+    				</tr>
+    				<tr>
+    					<td>Ink Color</td>
+    					<td>Black</td>
+    				</tr>
+    				<tr>
+    					<td>Manufacturer Part Number</td>
+    					<td>MSLP16-Blk</td>
+    				</tr>   				    				    				   				    								
+    			</tbody>
+  			</table>
+		</div>
+
+		<div class="container">
+			<form id="review">
+				<h2>Write your review</h2>
+				<div class="form-input">
+					<label for="title">Title</label>
+					<input id="title" type="text" class="form-control" placeholder="Title">
+				</div>
+
+				<br>
+				<label for="star">Rating</label>
+				<div id="star">
+					
+				</div>
+				<br>
+
+				<div class="form-input">
+					<label for="body">Review</label>
+					<textarea id="body" class="form-control" rows="10" placeholder="Write your review here..."></textarea>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-primary">Add Review</button>
+			</form>
+		</div>
+
+		<div class="container">
+			<ol id="pastReviews">
+			</ol>
+		</div>
+	</body>
+</html>
